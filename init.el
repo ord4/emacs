@@ -7,6 +7,7 @@
 (package-refresh-contents)
 
 ;; Recognize different modes
+;; Org mode
 (require 'org)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
@@ -20,6 +21,9 @@
 ;; Multiple cursors
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
+;; Set the warning bell to visual
+(setq visible-bell 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
